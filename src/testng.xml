@@ -1,0 +1,23 @@
+<suite name="Test Automation Framework Suite" verbose="1" parallel="methods" thread-count="1">
+    
+	<test name="Test Automation Framework Test">
+	<!--   	<packages>
+			<package name="test.resources.*" />		
+		</packages> 
+		-->
+		 <classes>
+       <class name="test.resources.GoogleKeywordTestSuite" />
+    </classes> 
+    
+		
+	</test>
+	<listeners>
+ <!--    <listener class-name="com.menonvarun.test.automation.framework.testng.listener.MethodInvokerListener" /> -->
+    <listener class-name="test.resources.HtmlReporter" />
+ <!--    <listener class-name="org.uncommons.reportng.HTMLReporter" /> 
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
+  
+  </listeners>
+	
+</suite>
+
